@@ -4,3 +4,4 @@
 *  获得客户端的ip和所在的地区。ipadress <br />
 *  获得汉字词组的拼音首字母 。 getfirstchar.php <br />
 *  添加一个性能调试类，Timer.
+*  添加中国地区表 area.sql
