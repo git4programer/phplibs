@@ -56,6 +56,5 @@ function ajaxGetHtml($url,$data=''){
         return $out;
     }
 }
-ajaxGetHtml('http://localhost/up.php');
 
 ?>
