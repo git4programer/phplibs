@@ -1,17 +1,17 @@
 
-CREATE  TABLE IF NOT EXISTS `system_const_area` (
+CREATE  TABLE IF NOT EXISTS `pyd_areas` (
   `id` INT(11) NOT NULL AUTO_INCREMENT ,
   `name` VARCHAR(255) NOT NULL ,
   `parent_id` INT(11) NOT NULL ,
   `has_sub_info` VARCHAR(255) NOT NULL ,
   PRIMARY KEY (`id`) )
-ENGINE = MyISAM
+ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8
 COMMENT = '地区数据表';
 
 
 
-REPLACE INTO `system_const_area` (`id`, `name`, `parent_id`, `has_sub_info`) VALUES
+REPLACE INTO `pyd_areas` (`id`, `name`, `parent_id`, `has_sub_info`) VALUES
 (1003, '合肥', 1002, 'true'),
 (1004, '合肥市', 1003, 'false'),
 (1005, '长丰县', 1003, 'false'),
@@ -1462,7 +1462,7 @@ REPLACE INTO `system_const_area` (`id`, `name`, `parent_id`, `has_sub_info`) VAL
 (2467, '奈曼旗', 2460, 'false'),
 (2468, '扎鲁特旗', 2460, 'false'),
 (2469, '鄂尔多斯', 2434, 'true');
-REPLACE INTO `const_area` (`id`, `name`, `parent_id`, `hasSubInfo`) VALUES
+REPLACE INTO `pyd_areas` (`id`, `name`, `parent_id`, `has_sub_info`) VALUES
 (2470, '鄂尔多斯市', 2469, 'false'),
 (2471, '准格尔旗', 2469, 'false'),
 (2472, '乌审旗', 2469, 'false'),
@@ -2815,7 +2815,7 @@ REPLACE INTO `const_area` (`id`, `name`, `parent_id`, `hasSubInfo`) VALUES
 (4327, '湖州市南浔区', 3510, 'false'),
 (4328, '湖州市吴兴区', 3510, 'false'),
 (4329, '嘉兴市南湖区', 3503, 'false');
-REPLACE INTO `const_area` (`id`, `name`, `parent_id`, `hasSubInfo`) VALUES
+REPLACE INTO `pyd_areas` (`id`, `name`, `parent_id`, `has_sub_info`) VALUES
 (4330, '嘉兴市秀洲区', 3503, 'false'),
 (4331, '金华市金东区', 3522, 'false'),
 (4332, '金华市婺城区', 3522, 'false'),
@@ -3439,4 +3439,3 @@ REPLACE INTO `const_area` (`id`, `name`, `parent_id`, `hasSubInfo`) VALUES
 (4846, '香港', 0, 'true'),
 (4853, '澳门', 0, 'true'),
 (4858, '台湾', 0, 'true');
-
