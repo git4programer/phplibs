@@ -1,6 +1,6 @@
-1. ÅäÖÃ£ºmain.php
+1. é…ç½®ï¼šmain.php
 
-ÔÚcomponents ÏÂÌí¼Ó
+åœ¨components ä¸‹æ·»åŠ 
 
  'ip'=>array(
  'class'=> 'IpLocation',
@@ -8,30 +8,26 @@
 
 
 
-2.°ÑIpLocation.php¸´ÖÆµ½ protected/components/ÏÂÃæ
+2.æŠŠIpLocation.phpå¤åˆ¶åˆ° protected/components/ä¸‹é¢
 
- °Ñqqwry.dat¸´ÖÆµ½ÏîÄ¿¸ùÄ¿Â¼
-
-
+ æŠŠqqwry.datå¤åˆ¶åˆ°é¡¹ç›®æ ¹ç›®å½•
 
 
-3. ²âÊÔ
 
-ÔÚÊÓÍ¼ÀïÌí¼Ó
+
+3. æµ‹è¯•
+
+åœ¨è§†å›¾é‡Œæ·»åŠ 
 
 
 <?php
 $a=YII::app()->ip;
-//$ip=$a->getlocation(); Í¶ÈëÊ¹ÓÃ
+//$ip=$a->getlocation(); æŠ•å…¥ä½¿ç”¨
 
-$ip=$a->getlocation('124.160.227.202'); //ÓÃIPÀ´²âÊÔÒ»ÏÂ
+$ip=$a->getlocation('124.160.227.202'); //ç”¨IPæ¥æµ‹è¯•ä¸€ä¸‹
 echo $ip;
 
 ?>
 
 
-
-
-                                                          2011Äê12ÔÂ21ÈÕ
-
-                                                                Ê·º£
+ 
